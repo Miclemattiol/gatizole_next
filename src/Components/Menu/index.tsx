@@ -3,7 +3,7 @@
 import styles from "./Menu.module.scss";
 import { Menu as MenuIcon, Close } from "@/Icons";
 import classNames from "classnames";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { LangProps } from "@/Utils";
 import { getDictionary } from "@/Dictionary";
 import { Inter } from "next/font/google";

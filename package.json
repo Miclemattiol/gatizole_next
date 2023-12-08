@@ -1,30 +1,27 @@
 {
-  "name": "gatizole_next",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/negotiator": "^0.6.3",
-    "classnames": "^2.3.2",
-    "negotiator": "^0.6.3",
-    "next": "14.0.3",
-    "node-sass": "^9.0.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "sass": "^1.69.5",
-    "sharp": "^0.33.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3",
-    "typescript": "^5"
-  }
+	"name": "gatizole_next",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"classnames": "^2.3.2",
+		"next": "^14.0.4",
+		"react": "^18",
+		"react-dom": "^18",
+"sass": "^1.69.5",
+		"sharp": "^0.33.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"eslint": "^8",
+		"eslint-config-next": "14.0.3",
+		"typescript": "^5"
+	}
 }

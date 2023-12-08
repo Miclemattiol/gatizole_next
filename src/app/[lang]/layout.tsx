@@ -1,6 +1,5 @@
 import Footer from "@/Components/Footer";
 import { LangProps } from "@/Utils";
-import { useContext } from "react";
 
 type LayoutProps = {
 	children: React.ReactNode;
