@@ -1,0 +1,24 @@
+{
+	"menu": {
+		"home": "Home",
+		"about": "Chi siamo",
+		"cats": "I nostri gatti",
+		"rules": "Le nostre regole",
+		"menu": "Menu",
+		"faq": "FAQ",
+		"contacts": "Contatti"
+	},
+	"buttons": {
+		"book": "Prenota ora"
+	},
+	"home": {
+		"intro": "Il primo Cat Cafè\ndel Trentino Alto Adige",
+		"description": "Non un caffè al banco veloce,\nma un luogo dove prendersi del\ntempo per se, concedersi un\nmomento particolare e perché\nno, anche qualche sfizio goloso.",
+		"rules": "Leggi le regole per migliorare la\ntua e la loro esperienza da noi! "
+	},
+	"footer": {
+		"title": "Contattaci",
+		"telephone": "Telefono",
+		"address": "Indirizzo"
+	}
+}

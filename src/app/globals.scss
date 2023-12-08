@@ -1,0 +1,37 @@
+:root {
+	// Colors
+	--background-color: #d6c3b7;
+	--background-color-alt: #557c71;
+	--background-color-2: white;
+
+	--text-color: #202f2b;
+	--text-color-alt: white;
+	--text-color-2: #d6c3b7;
+
+	--title-color: #202f2b;
+	--title-border-color: white;
+
+	--button-color: #a47c52;
+
+	// Sizes
+	--header-height: 64px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-text {
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+body {
+	overscroll-behavior: none;
+}

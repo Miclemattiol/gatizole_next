@@ -1,0 +1,27 @@
+div.Header {
+	--icon-size: 32px;
+	--padding: calc((var(--header-height) - var(--icon-size)) / 2);
+
+	background-color: var(--background-color-alt);
+	height: var(--header-height);
+	width: 100vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.logo {
+		height: 90%;
+		width: auto;
+	}
+
+	.menuButton {
+		position: absolute;
+		top: var(--padding);
+		left: var(--padding);
+		height: var(--icon-size);
+		width: var(--icon-size);
+
+		
+	}
+}

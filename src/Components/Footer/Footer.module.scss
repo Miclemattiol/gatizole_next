@@ -1,0 +1,17 @@
+.Footer {
+    --padding: 32px;
+    --gap: 16px;
+
+	background-color: var(--background-color-alt);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--text-color-alt);
+	padding: var(--padding);
+	gap: var(--gap);
+
+	.title {
+		//make it uppercase
+		text-transform: uppercase;
+	}
+}

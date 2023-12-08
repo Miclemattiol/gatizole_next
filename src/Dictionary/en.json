@@ -1,0 +1,24 @@
+{
+	"menu": {
+		"home": "Home",
+		"about": "About",
+		"cats": "Our cats",
+		"rules": "Our rules",
+		"menu": "Menu",
+		"faq": "FAQ",
+		"contacts": "Contacts"
+	},
+	"buttons": {
+		"book": "Book now"
+	},
+	"home": {
+		"intro": "The first Cat Cafè\nin Trentino Alto Adige",
+		"description": "Not a quick coffee at the counter,\nbut a place to take some time for yourself,\nto treat yourself to a special moment and why not,\nsome tasty whim.",
+		"rules": "Read the rules to improve your and their experience with us!"
+	},
+	"footer": {
+		"title": "Contact us",
+		"telephone": "Telephone",
+		"address": "Address"
+	}
+}

@@ -1,0 +1,68 @@
+div.Menu {
+	--menu-padding: 32px;
+	--menu-gap: 12px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	height: 0px;
+	background-color: var(--background-color-alt);
+	transition: 0.5s;
+	z-index: 100;
+
+	&.opened {
+		position: fixed;
+		height: 100vh;
+		margin-top: 0;
+
+		.linksContainer {
+			padding-top: var(--menu-padding);
+		}
+	}
+
+	.spacer {
+		min-height: var(--header-height);
+		width: 100vw;
+	}
+
+	.linksContainer {
+		display: flex;
+		transition: 0.5s;
+		padding-top: 0;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--menu-gap);
+		width: 100vw;
+	}
+
+	.link {
+		text-decoration: none;
+		color: var(--text-color-alt);
+	}
+
+	.menuContent {
+		opacity: 0;
+		transition: 0.5s;
+	}
+
+	.visible {
+		opacity: 1;
+	}
+}
+
+div.MenuButton {
+	z-index: 101;
+	.icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+
+		&.visible {
+			opacity: 1;
+		}
+	}
+}
