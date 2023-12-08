@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.scss";
 import { LangProps } from "@/Utils";
+import { Analytics } from "@vercel/analytics/react";
 
 type RootLayoutProps = {
 	children: React.ReactNode;
@@ -21,6 +22,7 @@ export default function RootLayout({
 	return (
 		<html lang={lang}>
 			<body className={roboto.className}>{children}</body>
+			<Analytics />
 		</html>
 	);
 }
