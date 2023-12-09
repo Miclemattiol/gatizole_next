@@ -23,5 +23,8 @@
 	},
 	"wip": {
 		"title": "The requested page is work in progress"
+	},
+	"e404": {
+		"title": "The requested page does not exist"
 	}
 }

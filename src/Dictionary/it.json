@@ -23,5 +23,8 @@
 	},
 	"wip": {
 		"title": "La pagina richiesta è in lavorazione"
+	},
+	"e404": {
+		"title": "La pagina richiesta non esiste"
 	}
 }
