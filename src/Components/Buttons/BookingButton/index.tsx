@@ -1,3 +1,5 @@
+"use client";
+
 import { LangProps } from "@/Utils";
 import styles from "./BookingButton.module.scss";
 import { getDictionary } from "@/Dictionary";
@@ -21,6 +23,9 @@ export const BookingButton = ({
 				className,
 				inter.className
 			)}
+			onClick={() => {
+				window.open("https://gatizole.plateform.app/");
+			}}
 		>
 			{buttonString}
 		</button>

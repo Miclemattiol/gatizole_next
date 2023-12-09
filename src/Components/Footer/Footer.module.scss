@@ -1,6 +1,6 @@
 .Footer {
-    --padding: 32px;
-    --gap: 16px;
+	--padding: 32px;
+	--gap: 16px;
 
 	background-color: var(--background-color-alt);
 	display: flex;
@@ -9,6 +9,7 @@
 	color: var(--text-color-alt);
 	padding: var(--padding);
 	gap: var(--gap);
+	height: var(--footer-height);
 
 	.title {
 		//make it uppercase
