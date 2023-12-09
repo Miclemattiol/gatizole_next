@@ -34,6 +34,9 @@ const CatDescription = ({
 			>
 				{description}
 			</span>
+			<span>
+				
+			</span>
 		</div>
 	);
 };
