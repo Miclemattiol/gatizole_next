@@ -20,5 +20,8 @@
 		"title": "Contattaci",
 		"telephone": "Telefono",
 		"address": "Indirizzo"
+	},
+	"wip": {
+		"title": "La pagina richiesta è in lavorazione"
 	}
 }

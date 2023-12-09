@@ -8,6 +8,7 @@ import { MenuButton } from "../Menu";
 import { LangProps } from "@/Utils";
 import { It } from "@/Icons";
 import LanguageSwitcher from "../LanguageSwitcher";
+import Link from "next/link";
 
 type HeaderProps = {
 	background?: boolean;
@@ -24,13 +25,18 @@ const Header = ({ background = true, params, className }: HeaderProps) => {
 				className={classNames(styles.menuButton)}
 				params={params}
 			/>
-			<Image
-				src={logo}
-				alt={"logo"}
-				priority={true}
-				className={classNames(styles.logo)}
+			<Link href={"/"} className={styles.logoContainer}>
+				<Image
+					src={logo}
+					alt={"logo"}
+					priority={true}
+					className={classNames(styles.logo)}
+				/>
+			</Link>
+			<LanguageSwitcher
+				params={params}
+				className={styles.languageSwitcher}
 			/>
-			<LanguageSwitcher params={params} className={styles.languageSwitcher} />
 		</div>
 	);
 };

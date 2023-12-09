@@ -10,8 +10,12 @@ div.Header {
 	justify-content: center;
 	align-items: center;
 
-	.logo {
+	.logoContainer {
 		height: 90%;
+		width: auto;
+	}
+	.logo {
+		height: 100%;
 		width: auto;
 		z-index: 100;
 	}

@@ -8,6 +8,7 @@ import { BookingButton } from "@/Components/Buttons/BookingButton";
 import { Roboto } from "next/font/google";
 import Footprint from "@/Components/Footprint";
 import { cats, rules } from "@/Images";
+import Link from "next/link";
 
 type PageProps = LangProps;
 
@@ -50,7 +51,13 @@ export default function Home({ params }: PageProps) {
 			</div>
 			<div className={styles.rules}>
 				<span>{dict.rules}</span>
-				<Image src={rules} alt="rules" className={styles.rulesImage} />
+				<Link href={"/rules"}>
+					<Image
+						src={rules}
+						alt="rules"
+						className={styles.rulesImage}
+					/>
+				</Link>
 			</div>
 		</main>
 	);

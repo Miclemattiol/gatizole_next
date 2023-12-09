@@ -20,5 +20,8 @@
 		"title": "Contact us",
 		"telephone": "Telephone",
 		"address": "Address"
+	},
+	"wip": {
+		"title": "The requested page is work in progress"
 	}
 }
