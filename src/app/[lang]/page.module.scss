@@ -53,7 +53,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding: 64px 0;
+			padding: 48px 0;
 
 			span {
 				color: var(--text-color-alt);
@@ -63,6 +63,8 @@
 				font-weight: 400;
 				line-height: 24px;
 				letter-spacing: 0em;
+				width: 80%;
+				height: 90%;
 			}
 
 			.footprint1,
@@ -92,7 +94,8 @@
 		//padding side is (100vw - 240px) / 2
 		--cat-img-height: 217px;
 		--cat-img-width: 240px;
-		--padding: calc((100vw - var(--cat-img-width)) / 2);
+		// --padding: calc((100vw - var(--cat-img-width)) / 2);
+		--padding: 24px;
 		--padding-h: 64px;
 		--gap: 16px;
 

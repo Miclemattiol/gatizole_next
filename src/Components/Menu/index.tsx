@@ -82,7 +82,7 @@ export const Menu = ({ className, open, params: { lang } }: MenuProps) => {
 				{menuLinks.map(({ name, href }) => (
 					<a
 						key={name}
-						href={href}
+						href={`/${lang}${href}`}
 						className={classNames(
 							styles.link,
 							"menu-text",

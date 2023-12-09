@@ -25,7 +25,7 @@ const Header = ({ background = true, params, className }: HeaderProps) => {
 				className={classNames(styles.menuButton)}
 				params={params}
 			/>
-			<Link href={"/"} className={styles.logoContainer}>
+			<Link href={`/${params.lang}`} className={styles.logoContainer}>
 				<Image
 					src={logo}
 					alt={"logo"}

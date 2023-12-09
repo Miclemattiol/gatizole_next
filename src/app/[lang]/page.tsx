@@ -51,7 +51,7 @@ export default function Home({ params }: PageProps) {
 			</div>
 			<div className={styles.rules}>
 				<span>{dict.rules}</span>
-				<Link href={"/rules"}>
+				<Link href={`/${params.lang}/rules`}>
 					<Image
 						src={rules}
 						alt="rules"
