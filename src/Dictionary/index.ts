@@ -1,8 +1,8 @@
-import { Locale } from "@/Utils";
+import { locale } from "@/Utils";
 import dict from "./it.json";
 import data from "./data.json";
 
-export const getDictionary = (locale: Locale) => {
+export const getDictionary = (locale: locale) => {
 	return require(`./${locale}.json`) as typeof dict;
 };
 
