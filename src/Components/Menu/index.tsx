@@ -120,7 +120,6 @@ export const MenuButton = ({ className, onClick, params }: MenuButtonProps) => {
 					document.getElementsByTagName("body")[0].style.overflow =
 						open ? "auto" : "hidden";
 				}}
-				// style={open ? { position: "fixed" } : undefined}
 			>
 				<MenuIcon
 					className={classNames(styles.icon, !open && styles.visible)}

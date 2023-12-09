@@ -2,11 +2,7 @@ import { NextMiddleware } from "next/server";
 import { locale, locales, defaultLocale } from "./Utils";
 
 const hasLocale = (url: string) => {
-	//check that the url starts with a valid locale with no other characters after it except for a possible slash
-	console.log(url);
-	console.log(/\/${l}($|\/.*)/.test(url));
 	return new RegExp(`\\/(${locales.join("|")})($|\\/.*)`).test(url);
-	return locales.some((l) => url.startsWith(`/${l}`));
 };
 
 export const middleware: NextMiddleware = (req) => {

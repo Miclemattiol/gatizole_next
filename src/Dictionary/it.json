@@ -16,13 +16,42 @@
 		"description": "Non un caffè al banco veloce, ma un luogo dove prendersi del tempo per se, concedersi un momento particolare e perché no... anche qualche sfizio goloso.",
 		"rules": "Leggi le regole per migliorare la tua e la loro esperienza da noi! "
 	},
+	"cats": [
+		{
+			"name": "Nina",
+			"description": "Sono una piccola gatta peperina e l’ultima entrata nella squadra Gatizole. Sono stata trovata sulla strada vicino a Roma insieme alla mia sorellina e dopo un lungo viaggio sono arrivata qui. Nonostante il mio passato, amo tutti gli esseri umani e sono molto energica. Tendo a mordicchiare le mani, ma magari potrete aiutarmi a smettere con questo vizio giocando con me solo con i giochi a disposizione!",
+			"likes": "saltare, correre e giocare, esplorare ciò che mi circonda",
+			"dislikes": "essere spostata senza il mio consenso, chi non mi fa le coccole."
+		},
+		{
+			"name": "Nina",
+			"description": "Sono una piccola gatta peperina e l’ultima entrata nella squadra Gatizole. Sono stata trovata sulla strada vicino a Roma insieme alla mia sorellina e dopo un lungo viaggio sono arrivata qui. Nonostante il mio passato, amo tutti gli esseri umani e sono molto energica. Tendo a mordicchiare le mani, ma magari potrete aiutarmi a smettere con questo vizio giocando con me solo con i giochi a disposizione!",
+			"likes": "saltare, correre e giocare, esplorare ciò che mi circonda",
+			"dislikes": "essere spostata senza il mio consenso, chi non mi fa le coccole."
+		},
+		{
+			"name": "Nina",
+			"description": "Sono una piccola gatta peperina e l’ultima entrata nella squadra Gatizole. Sono stata trovata sulla strada vicino a Roma insieme alla mia sorellina e dopo un lungo viaggio sono arrivata qui. Nonostante il mio passato, amo tutti gli esseri umani e sono molto energica. Tendo a mordicchiare le mani, ma magari potrete aiutarmi a smettere con questo vizio giocando con me solo con i giochi a disposizione!",
+			"likes": "saltare, correre e giocare, esplorare ciò che mi circonda",
+			"dislikes": "essere spostata senza il mio consenso, chi non mi fa le coccole."
+		},
+		{
+			"name": "Nina",
+			"description": "Sono una piccola gatta peperina e l’ultima entrata nella squadra Gatizole. Sono stata trovata sulla strada vicino a Roma insieme alla mia sorellina e dopo un lungo viaggio sono arrivata qui. Nonostante il mio passato, amo tutti gli esseri umani e sono molto energica. Tendo a mordicchiare le mani, ma magari potrete aiutarmi a smettere con questo vizio giocando con me solo con i giochi a disposizione!",
+			"likes": "saltare, correre e giocare, esplorare ciò che mi circonda",
+			"dislikes": "essere spostata senza il mio consenso, chi non mi fa le coccole."
+		}
+	],
 	"footer": {
 		"title": "Contattaci",
 		"telephone": "Telefono",
 		"address": "Indirizzo"
 	},
+	"todo": {
+		"title": "La pagina richiesta non è ancora stata creata"
+	},
 	"wip": {
-		"title": "La pagina richiesta è in lavorazione"
+		"title": "La pagina richiesta è in lavorazione, pertanto non è ancora completa"
 	},
 	"e404": {
 		"title": "La pagina richiesta non esiste"

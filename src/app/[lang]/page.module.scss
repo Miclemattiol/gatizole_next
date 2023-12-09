@@ -92,10 +92,10 @@
 
 	.cats {
 		//padding side is (100vw - 240px) / 2
-		--cat-img-height: 217px;
+		--cat-img-height: 240px;
 		--cat-img-width: 240px;
 		// --padding: calc((100vw - var(--cat-img-width)) / 2);
-		--padding: 24px;
+		--padding: 32px;
 		--padding-h: 64px;
 		--gap: 16px;
 
@@ -145,7 +145,7 @@
 
 	.rules {
 		--padding: 36px;
-		--gap: 8px;
+		--gap: 18px;
 
 		display: flex;
 		flex-direction: column;

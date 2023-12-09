@@ -7,7 +7,8 @@ import Image from "next/image";
 import { BookingButton } from "@/Components/Buttons/BookingButton";
 import { Roboto } from "next/font/google";
 import Footprint from "@/Components/Footprint";
-import { cats, rules } from "@/Images";
+import { rules } from "@/Images";
+import { cats } from "@/Utils";
 import Link from "next/link";
 
 type PageProps = LangProps;
@@ -42,8 +43,8 @@ export default function Home({ params }: PageProps) {
 					{cats.map((cat, index) => (
 						<Image
 							key={index}
-							src={cat}
-							alt=""
+							src={cat.image}
+							alt={cat.name}
 							className={styles.catImage}
 						/>
 					))}

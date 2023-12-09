@@ -21,8 +21,11 @@
 		"telephone": "Telephone",
 		"address": "Address"
 	},
+	"todo": {
+		"title": "The requested page has not yet been created"
+	},
 	"wip": {
-		"title": "The requested page is work in progress"
+		"title": "The requested page is under construction, therefore it is not yet complete"
 	},
 	"e404": {
 		"title": "The requested page does not exist"

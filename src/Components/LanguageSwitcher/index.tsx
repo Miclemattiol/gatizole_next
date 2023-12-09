@@ -47,7 +47,6 @@ const LanguageSwitcher = (props: LanguageSwitcherProps) => {
 				)}
 				ref={menuRef}
 			>
-				{/* return every locale icon and put the active one first*/}
 				{locales
 					.map((locale) => {
 						const LocaleIcon = getLocaleIcon(locale);
