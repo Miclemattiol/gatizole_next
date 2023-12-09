@@ -16,9 +16,11 @@ const Footer = (props: FooterProps) => {
 			<InfoBox name={dict.telephone}>
 				<a href={`tel:${data.phoneNumber}`}>{data.phoneNumber}</a>
 			</InfoBox>
-			<InfoBox name={dict.address}>{data.address}</InfoBox>
+			<InfoBox name={dict.address}>
+				<a href={`${data.addressLink}`}>{data.address}</a>
+			</InfoBox>
 		</div>
 	);
 };
-
+// https://maps.app.goo.gl/CEf1yBiuWTmNcaxdA
 export default Footer;
