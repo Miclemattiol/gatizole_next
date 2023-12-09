@@ -6,11 +6,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 type TitleProps = {
 	children: React.ReactNode;
+	className?: string;
 };
 
-const Title = ({ children }: TitleProps) => {
+const Title = ({ children, className }: TitleProps) => {
 	return (
-		<span className={classNames(styles.Title, inter.className)}>
+		<span className={classNames(styles.Title, inter.className, className)}>
 			{children}
 		</span>
 	);

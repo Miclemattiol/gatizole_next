@@ -22,28 +22,23 @@ export const getLocaleIcon = (locale: locale) => {
 interface Cat {
 	image: StaticImageData;
 	name: string;
-	index: number;
 }
 
 export const cats: Cat[] = [
 	{
 		name: "Nina",
 		image: Nina,
-		index: 0,
 	},
 	{
 		name: "Alcide",
 		image: Alcide,
-		index: 1,
 	},
 	{
 		name: "Gianni",
 		image: Gianni,
-		index: 2,
 	},
 	{
 		name: "Suzanne",
 		image: Suzanne,
-		index: 3,
 	},
 ];

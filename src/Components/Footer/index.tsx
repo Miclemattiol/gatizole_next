@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { LangProps } from "@/Utils";
 
 type FooterProps = React.HTMLAttributes<HTMLDivElement> & LangProps;
-
+//TODO Seguici sui nostri social
 const Footer = (props: FooterProps) => {
 	const data = getData();
 	const dict = getDictionary(props.params.lang).footer;
