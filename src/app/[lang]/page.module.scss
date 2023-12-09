@@ -102,6 +102,9 @@
 		position: relative;
 		background-color: var(--background-color);
 		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 
 		.catCarousel {
 			display: flex;
