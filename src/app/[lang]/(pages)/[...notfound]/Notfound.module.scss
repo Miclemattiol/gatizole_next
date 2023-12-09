@@ -5,17 +5,18 @@ div.Notfound {
 	align-items: center;
 	justify-content: center;
 
-	.num404 {
-		font-size: 128px;
+	.num404,
+	.err404 {
 		font-weight: bold;
 		text-align: center;
-		color: var(--text-color-2);
+		color: var(--button-color);
+	}
+
+	.num404 {
+		font-size: 128px;
 	}
 
 	.err404 {
 		font-size: 32px;
-		font-weight: bold;
-		text-align: center;
-		color: var(--text-color-2);
 	}
 }
