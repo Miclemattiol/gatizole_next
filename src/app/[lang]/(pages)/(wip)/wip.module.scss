@@ -12,8 +12,8 @@
 	}
 
 	.wipImage {
-		--size: 1080px;
-		width: 90vw;
-		height: 90vw;
+		--size: min(60vh, 90vw);
+		height: var(--size);
+		width: var(--size);
 	}
 }
