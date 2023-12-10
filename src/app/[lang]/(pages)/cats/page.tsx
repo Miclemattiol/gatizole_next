@@ -19,19 +19,17 @@ const Cats = ({ params: { lang } }: CatsProps) => {
 
 				return (
 					catDict && (
-						<>
-							<a id={cat.name} />
-							<CatDescription
-								key={index}
-								className={styles.CatDescription}
-								image={cat.image}
-								name={cat.name}
-								description={catDict!.description}
-								params={{ lang }}
-								likes={catDict!.likes}
-								dislikes={catDict!.dislikes}
-							/>
-						</>
+						<CatDescription
+							key={index}
+							className={styles.CatDescription}
+							image={cat.image}
+							name={cat.name}
+							description={catDict!.description}
+							params={{ lang }}
+							likes={catDict!.likes}
+							dislikes={catDict!.dislikes}
+							id={cat.name}
+						/>
 					)
 				);
 			})}

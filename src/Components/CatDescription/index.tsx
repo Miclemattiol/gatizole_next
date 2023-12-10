@@ -11,6 +11,7 @@ const roboto400 = Roboto({ weight: "400", subsets: ["latin"] });
 
 type CatDescriptionProps = {
 	className?: string;
+	id?: string;
 	image: StaticImageData;
 	name: string;
 	description: string;
@@ -20,6 +21,7 @@ type CatDescriptionProps = {
 
 const CatDescription = ({
 	className,
+	id,
 	description,
 	image,
 	name,
@@ -30,7 +32,7 @@ const CatDescription = ({
 	const dict = getDictionary(lang).cats;
 
 	return (
-		<div className={classNames(styles.CatDescription, className)}>
+		<div className={classNames(styles.CatDescription, className)} id={id}>
 			<div className={styles.catDisplay}>
 				<Image src={image} alt="catImage" className={styles.image} />
 				<div className={styles.nameContainer}>
@@ -54,7 +56,7 @@ const CatDescription = ({
 					className={classNames(styles.dislikes, roboto400.className)}
 				>
 					<span className={styles.title}>{dict.dislikes}</span>
-					{likes}
+					{dislikes}
 				</span>
 			</div>
 		</div>
