@@ -41,16 +41,20 @@
 			},
 			{
 				"name": "Suzanne",
-				"description": "I am a bit shy and shy, but just a scratch in the right place that I melt. I am a Munchkin and therefore I have short paws, but don't be fooled: I am agile and fast like any feline! I love tranquility and I want my spaces to be respected, but I am also a great playful ... If you want to conquer me, just play with a ribbon or a thread!",
+				"description": "I am a bit shy and shy, but just a scratch in the right place that I melt. I am a Munchkin and therefore I have short paws, but don't be fooled: I am agile and fast like any feline! I love tranquility and I want my spaces to be respected, but I am also a great playful... If you want to conquer me, just play with a ribbon or a thread!",
 				"likes": "playing with threads and balls, relaxing in my kennel",
 				"dislikes": "being teased for my height, those who do not respect my spaces"
 			}
 		]
 	},
+	"contacts": {
+		"title": "Contacts"
+	},
 	"footer": {
 		"title": "Contact us",
 		"telephone": "Telephone",
-		"address": "Address"
+		"address": "Address",
+		"social": "Come and meet us on our social networks"
 	},
 	"todo": {
 		"title": "The requested page has not yet been created"

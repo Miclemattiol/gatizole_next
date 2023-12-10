@@ -9,7 +9,7 @@ type LayoutProps = {
 } & LangProps;
 
 export default function Layout({ children, params: { lang } }: LayoutProps) {
-	const dict = getDictionary(lang).todo;
+	const dict = getDictionary(lang).wip;
 	return (
 		<>
 			{children}

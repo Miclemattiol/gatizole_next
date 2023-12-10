@@ -1,0 +1,21 @@
+div.Social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+
+	.name {
+		color: var(--text-color-2);
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.content {
+		display: flex;
+		gap: 16px;
+	}
+
+	a {
+		color: var(--text-color-alt);
+	}
+}

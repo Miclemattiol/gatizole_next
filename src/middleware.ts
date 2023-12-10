@@ -1,8 +1,13 @@
 import { NextMiddleware } from "next/server";
-import { locale, locales, defaultLocale } from "./Utils";
+import { locale } from "./Utils";
+import { data } from "./Dictionary";
+
+const { locales, defaultLocale } = data;
 
 const hasLocale = (url: string) => {
-	return new RegExp(`\\/(${locales.join("|")})($|\\/.*)`).test(url);
+	return new RegExp(`\\/(${Object.keys(locales).join("|")})($|\\/.*)`).test(
+		url
+	);
 };
 
 export const middleware: NextMiddleware = (req) => {
@@ -14,8 +19,9 @@ export const middleware: NextMiddleware = (req) => {
 	const locale: locale =
 		(acceptedLocale
 			?.split(/,|;/)
-			.filter((l) => locales.includes(l as locale))[0] as locale) ??
-		defaultLocale;
+			.filter((l) =>
+				Object.keys(locales).includes(l as locale)
+			)[0] as locale) ?? defaultLocale;
 
 	req.nextUrl.pathname = req.nextUrl.pathname.replace("/", `/${locale}/`);
 

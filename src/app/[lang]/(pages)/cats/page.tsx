@@ -1,12 +1,13 @@
 import CatDescription from "@/Components/CatDescription";
 import styles from "./Cats.module.scss";
-import { LangProps, cats } from "@/Utils";
-import { getDictionary } from "@/Dictionary";
+import { LangProps } from "@/Utils";
+import { data, getDictionary } from "@/Dictionary";
 import Title from "@/Components/Title";
 
 type CatsProps = LangProps;
 
 const Cats = ({ params: { lang } }: CatsProps) => {
+	const cats = data.cats;
 	const dict = getDictionary(lang).cats;
 
 	return (
@@ -14,20 +15,23 @@ const Cats = ({ params: { lang } }: CatsProps) => {
 			<Title className={styles.title}>{dict.title}</Title>
 
 			{cats.map((cat, index) => {
-				const catDict = dict.catsList.find((c) => c.name == cat.name);
+				const catDict = dict.catsList[cat.name];
 
 				return (
 					catDict && (
-						<CatDescription
-							key={index}
-							className={styles.CatDescription}
-							image={cat.image}
-							name={cat.name}
-							description={catDict!.description}
-							params={{ lang }}
-							likes={catDict!.likes}
-							dislikes={catDict!.dislikes}
-						/>
+						<>
+							<a id={cat.name} />
+							<CatDescription
+								key={index}
+								className={styles.CatDescription}
+								image={cat.image}
+								name={cat.name}
+								description={catDict!.description}
+								params={{ lang }}
+								likes={catDict!.likes}
+								dislikes={catDict!.dislikes}
+							/>
+						</>
 					)
 				);
 			})}

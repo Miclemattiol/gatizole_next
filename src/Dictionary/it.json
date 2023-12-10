@@ -47,10 +47,14 @@
 			}
 		]
 	},
+	"contacts": {
+		"title": "Contatti"
+	},
 	"footer": {
 		"title": "Contattaci",
 		"telephone": "Telefono",
-		"address": "Indirizzo"
+		"address": "Indirizzo",
+		"social": "Vieni a conoscerci sui nostri social"
 	},
 	"todo": {
 		"title": "La pagina richiesta non è ancora stata creata"

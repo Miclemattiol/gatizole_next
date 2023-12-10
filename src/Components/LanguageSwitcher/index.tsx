@@ -1,16 +1,19 @@
 import styles from "./LanguageSwitcher.module.scss";
-import { LangProps, getLocaleIcon } from "@/Utils";
+import { LangProps } from "@/Utils";
 import classNames from "classnames";
-import { locales, locale } from "@/Utils";
+import { locale } from "@/Utils";
 import { useRef, useState } from "react";
 import { useOutsideAlerter } from "@/Hooks/useOutsideAlterer";
 import { useRouter } from "next/navigation";
+import { data } from "@/Dictionary";
+
+const locales = data.locales;
 
 type LanguageSwitcherProps = React.HTMLAttributes<HTMLDivElement> & LangProps;
 
 const LanguageSwitcher = (props: LanguageSwitcherProps) => {
 	const [menuOpen, setMenuOpen] = useState(false);
-	const Icon = getLocaleIcon(props.params.lang);
+	const Icon = locales[props.params.lang].icon;
 	const router = useRouter();
 	const menuRef = useRef<HTMLDivElement>(null);
 	useOutsideAlerter(menuRef, () => {
@@ -47,9 +50,10 @@ const LanguageSwitcher = (props: LanguageSwitcherProps) => {
 				)}
 				ref={menuRef}
 			>
-				{locales
-					.map((locale) => {
-						const LocaleIcon = getLocaleIcon(locale);
+				{Object.keys(locales)
+					.map((l) => {
+						const locale = l as locale;
+						const LocaleIcon = locales[locale].icon;
 
 						return (
 							<a

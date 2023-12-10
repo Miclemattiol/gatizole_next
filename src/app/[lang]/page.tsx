@@ -1,6 +1,6 @@
 import styles from "./page.module.scss";
 import Header from "@/Components/Header";
-import { getDictionary } from "@/Dictionary";
+import { data, getDictionary } from "@/Dictionary";
 import { LangProps } from "@/Utils";
 import classNames from "classnames";
 import Image from "next/image";
@@ -8,7 +8,6 @@ import { BookingButton } from "@/Components/Buttons/BookingButton";
 import { Roboto } from "next/font/google";
 import Footprint from "@/Components/Footprint";
 import { rules } from "@/Images";
-import { cats } from "@/Utils";
 import Link from "next/link";
 
 type PageProps = LangProps;
@@ -17,6 +16,7 @@ const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export default function Home({ params }: PageProps) {
 	const dict = getDictionary(params.lang).home;
+	const cats = data.cats;
 
 	return (
 		<main className={styles.main}>
@@ -41,12 +41,16 @@ export default function Home({ params }: PageProps) {
 				<Footprint className={styles.footprint2} />
 				<div className={styles.catCarousel}>
 					{cats.map((cat, index) => (
-						<Image
+						<Link
+							href={`/${params.lang}/cats#${cat.name}`}
 							key={index}
-							src={cat.image}
-							alt={cat.name}
-							className={styles.catImage}
-						/>
+						>
+							<Image
+								src={cat.image}
+								alt={cat.name}
+								className={styles.catImage}
+							/>
+						</Link>
 					))}
 				</div>
 			</div>

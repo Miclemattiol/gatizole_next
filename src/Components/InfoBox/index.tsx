@@ -12,7 +12,7 @@ const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 const InfoBox = ({ className, name, children }: InfoBoxProps) => {
 	return (
-		<div className={styles.InfoBox}>
+		<div className={classNames(styles.InfoBox, className)}>
 			<span className={classNames(styles.name, roboto.className)}>
 				{name}
 			</span>

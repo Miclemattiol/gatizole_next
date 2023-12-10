@@ -1,13 +1,14 @@
-import { getData, getDictionary } from "@/Dictionary";
+import { data, getDictionary } from "@/Dictionary";
 import InfoBox from "../InfoBox";
 import styles from "./Footer.module.scss";
 import classNames from "classnames";
 import { LangProps } from "@/Utils";
+import { Instagram } from "@/Icons";
+import Social from "./Social";
 
 type FooterProps = React.HTMLAttributes<HTMLDivElement> & LangProps;
 //TODO Seguici sui nostri social
 const Footer = (props: FooterProps) => {
-	const data = getData();
 	const dict = getDictionary(props.params.lang).footer;
 
 	return (
@@ -19,6 +20,7 @@ const Footer = (props: FooterProps) => {
 			<InfoBox name={dict.address}>
 				<a href={`${data.addressLink}`}>{data.address}</a>
 			</InfoBox>
+			<Social params={props.params} />
 		</div>
 	);
 };
