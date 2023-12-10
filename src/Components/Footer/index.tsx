@@ -18,7 +18,9 @@ const Footer = (props: FooterProps) => {
 				<a href={`tel:${data.phoneNumber}`}>{data.phoneNumber}</a>
 			</InfoBox>
 			<InfoBox name={dict.address}>
-				<a href={`${data.addressLink}`}>{data.address}</a>
+				<a href={`${data.address.addressLink}`}>
+					{data.address.address}
+				</a>
 			</InfoBox>
 			<Social params={props.params} />
 		</div>

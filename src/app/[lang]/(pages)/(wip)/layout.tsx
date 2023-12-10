@@ -1,8 +1,11 @@
+"use client";	
+
 import { LangProps } from "@/Utils";
 import styles from "./wip.module.scss";
-import Image from "next/image";
-import { wip } from "@/Images";
 import { getDictionary } from "@/Dictionary";
+import { Close } from "@/Icons";
+import { useState } from "react";
+import classNames from "classnames";
 
 type LayoutProps = {
 	children: React.ReactNode;
@@ -10,11 +13,23 @@ type LayoutProps = {
 
 export default function Layout({ children, params: { lang } }: LayoutProps) {
 	const dict = getDictionary(lang).wip;
+	const [closed, setClosed] = useState(false);
 	return (
 		<>
 			{children}
-			<main className={styles.wipContainer}>
+			<main
+				className={classNames(
+					styles.wipContainer,
+					closed && styles.closed
+				)}
+			>
 				<span className={styles.wipMessage}>{dict.title}</span>
+				<Close
+					className={styles.close}
+					onClick={() => {
+						setClosed(true);
+					}}
+				/>
 			</main>
 		</>
 	);

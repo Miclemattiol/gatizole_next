@@ -6,11 +6,32 @@
 	bottom: 0;
 	left: 0;
 	width: 100vw;
-	height: 64px;
+	padding: 24px;
 	background-color: var(--background-color);
+
+	&.closed {
+		display: none;
+	}
 
 	.wipMessage {
 		font-size: 24px;
 		text-align: center;
+	}
+
+	.close {
+		--icon-size: 18px;
+		--margin: 8px;
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: var(--margin);
+		font-size: 24px;
+		color: var(--text-color);
+		cursor: pointer;
+		height: var(--icon-size);
+		width: var(--icon-size);
+		border-radius: 50%;
+		background-color: var(--background-color-2);
 	}
 }

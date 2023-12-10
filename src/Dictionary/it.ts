@@ -54,6 +54,8 @@ const it: Dict = {
 	},
 	contacts: {
 		title: "Contatti",
+		contactUs: "Come contattarci",
+		whereAreWe: "Dove siamo",
 	},
 	footer: {
 		title: "Contattaci",

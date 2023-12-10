@@ -58,6 +58,8 @@ export interface Dict {
 	};
 	contacts: {
 		title: string;
+		contactUs: string;
+		whereAreWe: string;
 	};
 	footer: {
 		title: string;
@@ -78,8 +80,13 @@ export interface Dict {
 
 export interface Data {
 	phoneNumber: string;
-	address: string;
-	addressLink: string;
+	email: string;
+	address: {
+		address: string;
+		addressLink: string;
+		addressLine1: string;
+		addressLine2: string;
+	};
 	locales: {
 		[key in locale]: { icon: (props: SvgProps) => React.JSX.Element };
 	};

@@ -54,6 +54,8 @@ const en: Dict = {
 	},
 	contacts: {
 		title: "Contacts",
+		contactUs: "Contact us",
+		whereAreWe: "Where are we",
 	},
 	footer: {
 		title: "Contact us",
