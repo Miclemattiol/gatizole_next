@@ -4,7 +4,7 @@ import styles from "./Menu.module.scss";
 import { Menu as MenuIcon, Close } from "@/Icons";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
-import { LangProps } from "@/Utils";
+import { LangProps, lockScroll } from "@/Utils";
 import { getDictionary } from "@/Dictionary";
 import { Inter } from "next/font/google";
 import { BookingButton } from "../Buttons/BookingButton";
@@ -117,8 +117,7 @@ export const MenuButton = ({ className, onClick, params }: MenuButtonProps) => {
 				onClick={(event) => {
 					onClick?.(event);
 					setOpen((prev) => !prev);
-					document.getElementsByTagName("body")[0].style.overflow =
-						open ? "auto" : "hidden";
+					lockScroll(!open);
 				}}
 			>
 				<MenuIcon

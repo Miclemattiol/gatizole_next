@@ -1,5 +1,5 @@
 import styles from "./LanguageSwitcher.module.scss";
-import { LangProps } from "@/Utils";
+import { LangProps, lockScroll } from "@/Utils";
 import classNames from "classnames";
 import { locale } from "@/Utils";
 import { useRef, useState } from "react";
@@ -26,6 +26,7 @@ const LanguageSwitcher = (props: LanguageSwitcherProps) => {
 				`/${props.params.lang}`,
 				`/${locale}`
 			);
+			lockScroll(false);
 			router.push(newUrl);
 		} else {
 			setMenuOpen(false);

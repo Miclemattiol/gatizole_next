@@ -5,7 +5,7 @@ import Image from "next/image";
 import { logo } from "@/Images";
 import classNames from "classnames";
 import { MenuButton } from "../Menu";
-import { LangProps } from "@/Utils";
+import { LangProps, lockScroll } from "@/Utils";
 import { It } from "@/Icons";
 import LanguageSwitcher from "../LanguageSwitcher";
 import Link from "next/link";
@@ -25,7 +25,11 @@ const Header = ({ background = true, params, className }: HeaderProps) => {
 				className={classNames(styles.menuButton)}
 				params={params}
 			/>
-			<Link href={`/${params.lang}`} className={styles.logoContainer}>
+			<Link
+				href={`/${params.lang}`}
+				className={styles.logoContainer}
+				onClick={() => lockScroll(false)}
+			>
 				<Image
 					src={logo}
 					alt={"logo"}

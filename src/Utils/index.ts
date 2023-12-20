@@ -7,3 +7,9 @@ export interface Cat {
 	image: StaticImageData;
 	name: string;
 }
+
+export const lockScroll = (lock: boolean) => {
+	document.getElementsByTagName("body")[0].style.overflow = lock
+		? "hidden"
+		: "auto";
+};
