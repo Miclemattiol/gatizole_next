@@ -3,7 +3,6 @@ import InfoBox from "../InfoBox";
 import styles from "./Footer.module.scss";
 import classNames from "classnames";
 import { LangProps } from "@/Utils";
-import { Instagram } from "@/Icons";
 import Social from "./Social";
 
 type FooterProps = React.HTMLAttributes<HTMLDivElement> & LangProps;
